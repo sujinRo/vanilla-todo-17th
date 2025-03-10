@@ -8,24 +8,26 @@
   </head>
   <body>
     <div class="container">
-      <p class="title">Things to do</p>
-      <form onsubmit="return false">
+      <h1 class="title">Things to do</h1>
+      <form class="inputForm" onsubmit="return false">
         <input
           id="inputPlan"
           type="text"
           placeholder="Enter your to do!"
           onkeypress="enterkey()"
         />
-        <button id="addBtn" type="button" onclick="click_addBtn()">+</button>
+        <button id="addBtn" type="button" onclick=" handleAddBtnClick()">
+          +
+        </button>
       </form>
       <hr />
       <div class="todo">
-        <p class="subTitle">📒to do</p>
+        <h1 class="subTitle">📒to do</h1>
         <ul type="none" id="todoList"></ul>
       </div>
       <hr />
       <div class="done">
-        <p class="subTitle">📂done</p>
+        <h1 class="subTitle">📂done</h1>
         <ul type="none" id="doneList"></ul>
       </div>
     </div>
