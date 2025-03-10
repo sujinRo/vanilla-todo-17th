@@ -5,11 +5,11 @@ body {
 .container {
   display: flex; /*수직으로 쌓임*/
   flex-direction: column;
-  width: 23rem;
-  height: 43rem;
+  width: 20rem;
+  height: 35rem;
   border-radius: 2rem;
   box-shadow: 0.4rem 0.4rem 0.4rem 0.4rem rgb(168, 168, 168);
-  margin: 0 auto; /*수평 중앙 정렬*/
+  margin: 3rem auto; /*수평 중앙 정렬*/
 }
 
 .title {
@@ -17,7 +17,7 @@ body {
   font-size: 1.8rem;
   font-weight: bold;
   margin-left: 1rem;
-  margin-bottom: 0;
+  margin-bottom: 0.3rem;
 }
 
 form {
@@ -28,10 +28,11 @@ form {
 }
 
 #inputPlan {
-  border-radius: 0.8rem;
+  border-radius: 0.9rem;
   border: none;
   width: 75%;
-  height: 2rem;
+  height: 1rem;
+  padding: 0.5rem;
   background-color: rgb(255, 225, 170);
   font-size: 1rem;
   outline: none;
@@ -44,8 +45,11 @@ form {
 #addBtn {
   border-radius: 100%;
   border: none;
+  display: flex;
   width: 2rem;
   height: 2rem;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(255, 225, 170);
   font-size: 1rem;
   color: rgb(255, 182, 93);
@@ -54,32 +58,38 @@ form {
 }
 
 hr {
-  width: 100%;
-  border: thin solid rgb(255, 225, 170);
+  width: 20rem;
+  height: 0.1rem;
+  background-color: rgb(255, 225, 170);
+  border: none;
 }
 
 .subTitle {
   color: rgb(255, 182, 93);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-left: 1rem;
   margin-bottom: 0;
   margin-top: 0;
 }
 
-.todo {
-  height: 40%;
-}
-
+.todo,
 .done {
-  height: 40%;
+  height: 35%;
 }
 
 #todoList,
 #doneList {
+  padding: 0 2rem;
   font-size: 1rem;
+  height: 75%;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 }
 
 li {
+  word-break: break-all;
   margin-bottom: 0.3rem;
 }
 
